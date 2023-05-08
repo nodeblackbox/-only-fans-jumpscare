@@ -1,0 +1,26 @@
+// Import the necessary modules
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Middleware to parse JSON data from incoming requests
+app.use(express.json());
+
+// Basic routes
+app.get('/', (req, res) => {
+res.send('Hello, welcome to the Express.js boilerplate application!');
+});
+
+app.get('/api', (req, res) => {
+res.json({ message: 'Welcome to the API!' });
+});
+
+app.post('/api/data', (req, res) => {
+const data = req.body;
+res.json({ message: 'Data received successfully', data });
+});
+
+// Start the server
+app.listen(port, () => {
+console.log(`Express.js boilerplate app listening at http://localhost:${port}`);
+});
