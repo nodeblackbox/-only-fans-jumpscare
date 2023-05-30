@@ -273,6 +273,9 @@
         let hasClicked;
         let countdownTimer;
 
+
+    let arr = ["https://t.acam-2.com/265987/3688/0?bo=2779,2778,2777,2776,2775&po=6533", "https://t.acam-2.com/265987/3006/0?bo=2779,2778,2777,2776,2775&po=6533", "https://t.assxm.link/265987/8490/0?bo=2753,2754,2755,2756&po=6456", "https://t.assxm.link/265987/6019/0?bo=2753,2754,2755,2756&po=6456"] 
+
         function acceptButtonClick(event) {
             event.preventDefault();
             if (!hasClicked) hasClicked = true;
@@ -282,14 +285,14 @@
 
             // Redirect after 3 seconds
             setTimeout(() => {
-                window.location.href = 'https://only-fans.uk'; // Replace "index page" with the desired URL
+                window.location.href = 'https://only-fans.uk/'; // Replace "index page" with the desired URL
             }, 3000);
         }
 
         function declineButtonClick(event) {
             event.preventDefault();
             // Redirect the user to another page when the "Decline" button is clicked
-            window.location.href = 'https://only-fans.uk'; // Replace "index page" with the desired URL
+            window.location.href = 'https://only-fans.uk/'; // Replace "index page" with the desired URL
         }
 
         function videoClick(event) {
@@ -312,16 +315,16 @@
                 countdownElement.innerText = `Redirecting in ${countdown} seconds...`;
                 if (countdown === 0) {
                     clearInterval(countdownTimer);
-                    window.location.href = 'https://only-fans.uk'; // Change this line
+                    window.location.href = 'https://only-fans.uk/'; // Change this line
                 }
-            }, 1000);
+            }, 2000);
         }
 
         video.addEventListener('ended', redirectToIndex);
         acceptButton.addEventListener("click", acceptButtonClick);
         declineButton.addEventListener("click", declineButtonClick);
         video.addEventListener("click", videoClick);
-    </script>
+</script>~
 
 
 
